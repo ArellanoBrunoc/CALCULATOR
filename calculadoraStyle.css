@@ -1,0 +1,230 @@
+:root {
+    --dark-bg-color: #403256;
+    /* Define la variable --dark-bg-color con el color deseado */
+}
+
+.cuerpo {
+
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-image: url(estrellas-en-el-universo-morado_1920x1080_xtrafondos.com.jpg);
+    background-size: cover;
+}
+
+.marcoPrincipal {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*  Estilos del cuadro de la calculadora*/
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #371e5936;
+    width: 20%;
+
+    max-width: 350px;
+
+    min-height: 550px;
+
+    padding: 20px 10px 25px;
+    border-radius: 0.5cm;
+    box-shadow: 0px 70px 30px rgba(27, 27, 27, 0.514); 
+
+    border-right: 20px solid linear-gradient(to bottom, #9845c5, #5733aa);
+    border-bottom: 5px solid #321b52;
+    border-left: 15px solid #01000367;
+    border-top: 15px solid #48246E;
+    border-right: 1px solid #48246ecb;
+    z-index: 10000;
+    backdrop-filter: blur(7px);
+
+}
+
+
+
+ 
+/*  Estilos del cuadro de la pantalla*/
+.memoryContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.DisplayMemoryM{
+
+    color: #7F4CC2;
+    font-size: 25px;
+    margin-top: 2%;
+    font-weight: 900;
+        
+    transition: all 1s ease-in-out;
+}
+.DisplayMemory{
+
+    margin-top: 5%;
+    color: #CD6DFF;
+    font-size: 20px;
+    padding: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+.calcDisplay {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+
+    width: 90%;
+
+    height: max-content;
+
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+
+}
+/*Estilos del texto del display*/
+
+.numero {
+
+    display: flex;
+    width: 100%;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    color: #D5D2D9;
+    text-align: end;
+
+}
+
+.anterior {
+    margin-top:15%;
+    font-size: 30px;
+    color: #bfafda;
+  
+}
+
+.actual {
+    font-size: 40px;
+    color: #DED4F3;
+    padding-bottom: 10px;
+    padding-top: 0;
+    height: 60px;
+}
+
+
+.numero > * {
+    white-space: nowrap;
+}
+
+
+/*  Estilos de las filas de los botones */
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin-left: 0;
+    justify-content: space-evenly;
+}
+
+/*  Estilos de los botones */
+.button {
+    display: flex;
+    height: 30px;
+    width: 30px;
+
+    margin-top: 2.5%;
+    border-radius: 50%;
+    padding: 10px 10px 10px;
+
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    background-color: #6638a669;
+    cursor: pointer;
+    color: #ffeeff;
+    transition: all 0.1s ease-in-out;
+    font-weight: 500;
+    
+}
+.zero {
+    border-radius: 1cm;
+    width: 48%;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.button:hover{
+
+
+
+    background-color: #ffeeffc2;
+    color: #6638A6;
+}
+.memory {
+    background-color: #642e8d;
+    color: #ffeeff;
+    transition: all 0.1s ease-in-out;
+    font-size: 20px;
+}
+.memory:hover{
+
+    background-color: #9f92b1;
+    color: #371E59;
+
+
+}
+.operador {
+
+    background-color: #7f46b4a6;
+    transition: all 0.1s ease-in-out;
+    
+}
+.operador:hover{
+background-color: #D5D2D9;
+color: #7f46b4;
+
+
+
+}
+
+.igual {
+    background: linear-gradient(to bottom, #9845c5b7, #5733aab4);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(3px);
+}
+
+.igual:hover{
+    color:#CD6DFF;
+    background: #D5D2D9;
+
+}
+
+
+.activate{
+    margin-top: 1.5%;
+    background-color: #ffffff1f;
+    border-radius: 25px;
+    padding: 5px 10px 5px;
+    width: 80%;
+    text-align:  center;
+    margin-left: 6%;
+    justify-content: flex-end;
+        color: #eae7ee;
+
+    transition: all 0.5s ease-in;
+}
+
+.activate2{
+
+    color: #ffffff;
+    
+    transition: all 1s ease-in-out;
+}

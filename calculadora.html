@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculadoraStyle.css" rel="styleSheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a2e230ad3a.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="cuerpo">
+    <header class="header">
+        <div class="marcoPrincipal">
+            <div class="calcContainer">
+
+
+                <div class="calcDisplay">
+                    <div class ="memoryContainer"> 
+                    <div   class="DisplayMemoryM">M </div>
+                    <div  id="MemoryMR"  class="DisplayMemory"> </div> 
+                </div>
+                    <div  id="displayAnterior" class="numero anterior">0 </div>
+                    <div id="displayActual" class="numero actual">0</div>
+
+                </div>
+
+                <div class="buttonRow">
+                    <div id="buttonMC" class="button memory"> MC</div>
+                    <div id="buttonMR" class="button  memory"> MR</div>
+                    <div id="buttonMS" class="button  memory"> MS</div>
+                    <div id="buttonMplus" class="button  memory"> M+</div>
+                    <div id="buttonMminus" class="button  memory"> M-</div>
+                </div>
+                <div class="buttonRow">
+                    <div id="buttonErase" class="button"> <i class="fas fa-arrow-left"></i> </div>
+                    <div id="buttonCE" class="button"> CE</div>
+                    <div id="buttonC" class="button"> C</div>
+                    <div id="buttonInvertSign" class="button operador"> <span>&plusmn;</span>
+                    </div>
+                    <div id="buttonRaiz" class="button operador"> <i class="fas fa-square-root-alt"></i>
+                    </div>
+                </div>
+                <div class="buttonRow">
+                    <div id="buttonSiete" class="button valor" label="7"> 7</div>
+                    <div id="buttonOcho" class="button valor" label="8"> 8</div>
+                    <div id="buttonNueve" class="button valor" label="9"> 9</div>
+                    <div id="buttonDivide" class="button valor operador" label="/"> /</div>
+                    <div id="buttonModule" class="button  valor operador" label="%"> %</div>
+                </div>
+                <div class="buttonRow">
+                    <div id="buttonCuatro" class="button valor" label="4"> 4</div>
+                    <div id="buttonCinco" class="button valor" label="5"> 5</div>
+                    <div id="buttonSeis" class="button valor" label="6"> 6</div>
+                    <div id="buttonMultiply" class="button valor operador" label="*"> *</div>
+                    <div id="button1OverX" class="button operador"> 1/x</div>
+                </div>
+                <div class="buttonRow">
+                    <div id="buttonUno" class="button valor" label="1"> 1</div>
+                    <div id="buttonDos" class="button valor" label="2"> 2</div>
+                    <div id="buttonTres" class="button valor" label="3"> 3</div>
+                    <div id="buttonMinus" class="button valor operador" label="-"> -</div>
+                    <div id="buttonPlus" class="button valor operador" label="+"> +</div>
+                </div>
+                <div class="buttonRow">
+                    <div id="buttonZero" class="button valor zero" label="0"> 0</div>
+                    <div id="buttonPoint" class="button valor operador" label="."> .</div>
+                    <div id="buttonEqual" class="button igual"> =</div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+</body>
+<script src="calculadora.js"></script>
+</html>
