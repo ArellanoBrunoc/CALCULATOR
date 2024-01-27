@@ -163,7 +163,7 @@ function TransmicionDeNumeros(event) {
                 ejecucion = true;
                 puntosUsados = 0;
                 controlRaiz = true;
-                console.log(controlRaiz);
+
             } else {
 
                 displayActual.innerText += `${numeroLabel}`
@@ -236,7 +236,7 @@ function Equal(event) {
     var siguienteNumero = false;
 
     num = 0;
-    console.log(operacionArray)
+
     for (let i = 0; i < operacionArray.length; i++) {
         //Si el carcater es diferente de un comando, lo concatena a numeroActual
         if (!operadores.includes(operacionArray[i])) {
@@ -307,7 +307,7 @@ function Equal(event) {
     //Logica de jerarquias de comandos y signos
     for (let i = 0; i < numerosAbstraidos.length - 1; i++) {
 
-        console.log('INICIANDO');
+
         if (numerosAbstraidos[i] != "/" && numerosAbstraidos[i] != "%" && numerosAbstraidos[i] != "*") {
 
             numerosAbstraidos[i] = parseFloat(numerosAbstraidos[i]);
@@ -375,7 +375,7 @@ function Equal(event) {
 
     for (let i = 1; i < numerosAbstraidos.length - 1; i++) {
         numerosAbstraidos[0] = parseFloat(numerosAbstraidos[0]) + parseFloat(numerosAbstraidos[i]);
-        console.log(numerosAbstraidos[0]);
+
 
     }
 
@@ -495,7 +495,7 @@ function Recall() {
 function RaizCuadrada(event) {
 
     if (controlRaiz != false) {
-        console.log('Entré a la raiz');
+
         if (parseFloat(displayActual.innerText) >= 0) {
             raiz = Math.sqrt(parseFloat(displayActual.innerText))
             displayAnterior.innerText = `√${parseFloat(displayActual.innerText)}`;
@@ -589,7 +589,7 @@ function Erase(event) {
             //Inicio de logica controladora para los Puntos, no permite nunca 2 puntos luego de un mismo operados:
             if (cadenaParaBorrar[cadenaParaBorrar.length - 1] == '.') {
                 puntosUsados--;
-                console.log(puntosUsados)
+
             }
             if (cadenaParaBorrar[cadenaParaBorrar.length - 1] == '%' || cadenaParaBorrar[cadenaParaBorrar.length - 1] == '+' || cadenaParaBorrar[cadenaParaBorrar.length - 1] == '-' || cadenaParaBorrar[cadenaParaBorrar.length - 1] == '/' || cadenaParaBorrar[cadenaParaBorrar.length - 1] == '*') {
                 puntosUsados = puntosPermitidos - 1;
@@ -658,7 +658,7 @@ function Erase(event) {
 
 function InvertSigns() {
     var cambioSignos = displayActual.innerText.split('');
-    console.log(cambioSignos);
+
 
 
     if (numeros.includes(cambioSignos[0])) {
@@ -666,7 +666,7 @@ function InvertSigns() {
 
 
     }
-    console.log(cambioSignos);
+
 
     for (let i = 0; i < cambioSignos.length - 1; i++) {
         if
@@ -676,7 +676,7 @@ function InvertSigns() {
         }
     }
 
-    console.log(cambioSignos);
+
     for (let i = 0; i < cambioSignos.length - 1; i++) {
 
         if (cambioSignos[i] == '+') {
@@ -726,7 +726,6 @@ function tamañoDisplay() {
     }
 
 }
-
 
 
 
